@@ -1,0 +1,20 @@
+server:
+  host: "0.0.0.0"
+  port: 8080
+
+langchain4j:
+  ollama:
+    chat-model:
+      enabled: true
+      api-key: "AAAAC3NzaC1lZDI1NTE5AAAAIG++UtjQunyLEGm06dsQ8UV87KkB4GVV+ZRMZzEgZCp0"
+      model-name: "gemma3:1b"
+      base-url: http://localhost:11434
+      temperature: 0.7
+      timeout: PT90S
+      stream: true
+  #If need, comment code above and uncomment below to use OpenAI model without install ollama
+  #open-ai: 
+  #  chat-model:
+  #    enabled: true
+  #    api-key: "demo"
+  #    model-name: "gpt-4o-mini"
