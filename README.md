@@ -31,7 +31,7 @@ It's designed for performance, simplicity, and clean architecture — showing ho
 ### 1. 🧱 Clone the project
 
 ```bash
-git clone https://github.com/seu-usuario/helidon-gemma3-bfs.git
+git clone https://github.com/pedrocarrijo95/helidon-gemma3-bfs.git
 cd helidon-gemma3-bfs
 ```
 ### 2. 🧠 Install Ollama (optional for local inference)
