@@ -81,6 +81,9 @@ If you prefer to use OpenAI's GPT models, update the **application.yaml** like t
   java -jar target/helidon-gemma3-bfs.jar
 ```
 
+![Request](tests-results/postman_request.png)
+
+
 The server will be available at:
 
 ```bash
@@ -104,6 +107,8 @@ curl -X POST http://localhost:8080/islands-count \
 ```bash
 "Three islands were found on the map, calculated using the BFS algorithm. Each one represents a separate piece of land surrounded by water."
 ```
+
+![Response](tests-results/postman_response.png)
 
 ## ✅ Why This Matters
 ### This project is an example of:
