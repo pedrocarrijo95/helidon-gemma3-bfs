@@ -6,7 +6,7 @@ langchain4j:
   ollama:
     chat-model:
       enabled: true
-      api-key: "AAAAC3NzaC1lZDI1NTE5AAAAIG++UtjQunyLEGm06dsQ8UV87KkB4GVV+ZRMZzEgZCp0"
+      api-key: "<your-api-key>"
       model-name: "gemma3:1b"
       base-url: http://localhost:11434
       temperature: 0.7
