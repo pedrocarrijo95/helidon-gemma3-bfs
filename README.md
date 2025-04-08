@@ -18,7 +18,7 @@ It's designed for performance, simplicity, and clean architecture — showing ho
 
 ## 🛠️ Technologies Used
 
-- ☕ Java 21+
+- ☕ Java 24
 - ⚙️ Helidon SE 4.2
 - 🤖 LangChain4j
 - 📦 Ollama (with `gemma3:1b`)
