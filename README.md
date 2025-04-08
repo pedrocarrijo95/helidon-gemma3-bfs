@@ -46,9 +46,6 @@ ollama run gemma3:1b
 
 ### 3. ⚙️ Configure the LLM connection
 
-Follow the installation guide from the official site:
-📎 [Ollama](https://ollama.com/)
-
 ```yaml
 langchain4j:
   ollama:
