@@ -5,7 +5,7 @@ This project is a **Helidon-based REST API** that processes a 2D map grid (with 
 It's designed for performance, simplicity, and clean architecture — showing how you can build intelligent microservices with Java, Helidon, and GenAI.
 
 ---
-.
+
 ## ✨ What It Does
 
 - Accepts a grid of `1`s and `0`s via a `POST /islands-count` endpoint
