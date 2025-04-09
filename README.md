@@ -156,6 +156,3 @@ Detect and isolate zones of interest (e.g. islands, fire zones, flooded regions)
 Helps in disaster response and urban planning
 
 
-
-
-.
