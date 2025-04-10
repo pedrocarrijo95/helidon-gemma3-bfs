@@ -45,7 +45,7 @@ ollama run gemma3:1b
 ```
 
 ### 3. ⚙️ Configure the LLM connection
-
+**application.yaml**
 ```yaml
 langchain4j:
   ollama:
