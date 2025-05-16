@@ -1,5 +1,6 @@
 package io.helidon.hol.lc4j.service;
-
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class NumberOfIslandsBFS {
     public int numIslands(char[][] grid) {
@@ -21,13 +22,22 @@ public class NumberOfIslandsBFS {
     }
 
     public void callBFS(char[][] grid, int i, int j){
-        if (i<0 || i>= grid.length || j<0 || j>= grid[i].length || grid[i][j] == '0'){
-            return;
-        }
+        Queue<int[]> fila = new LinkedList<>();
+        fila.add(new int[]{i, j});
         grid[i][j] = '0';
-        callBFS(grid, i-1,j); // up
-        callBFS(grid, i+1,j); // down
-        callBFS(grid, i,j-1); // left
-        callBFS(grid, i,j+1); //right
+    
+        int[][] direcoes = {{-1,0}, {1,0}, {0,-1}, {0,1}};
+    
+        while (!fila.isEmpty()) {
+            int[] ponto = fila.poll();
+            for (int[] dir : direcoes) {
+                int ni = ponto[0] + dir[0];
+                int nj = ponto[1] + dir[1];
+                if (ni >= 0 && nj >= 0 && ni < grid.length && nj < grid[0].length && grid[ni][nj] == '1') {
+                    grid[ni][nj] = '0';
+                    fila.add(new int[]{ni, nj});
+                }
+            }
+        }
     }
 }
